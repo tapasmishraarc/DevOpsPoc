@@ -13,6 +13,7 @@ namespace SiteCoreAppTest
         {
             var controller = new HomeController();
             var result = controller.Index() as ViewResult;
+            //comparing results
             Assert.AreEqual("Index", result.ViewName);
         }
     }
