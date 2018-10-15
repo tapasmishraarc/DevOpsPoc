@@ -1,9 +1,9 @@
-apiVersion: apps/v1beta1
-kind: Deployment
+apiVersion: v1
+kind: ReplicationController
 metadata:
   name: aspnetapp
 spec:
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
